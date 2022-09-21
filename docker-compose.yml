@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  postgres-basic_poll:
+    image: postgres:latest
+    restart: always
+    environment: 
+      POSTGRES_USER: 'basic_poll_app'
+      POSTGRES_PASSWORD: '@1234'
+    ports:
+      - "5432:5432"
